@@ -9,48 +9,62 @@
             font-family: Arial, sans-serif;
             line-height: 1.6;
             margin: 0;
-            padding: 0;
+            padding: 20px;
             background-color: #f4f4f4;
-        }
-        .container {
-            width: 80%;
-            margin: auto;
-            overflow: hidden;
         }
         header {
             background: #333;
             color: #fff;
-            padding-top: 30px;
-            min-height: 70px;
-            border-bottom: #0779e4 3px solid;
-        }
-        header a {
-            color: #fff;
-            text-decoration: none;
-            text-transform: uppercase;
-            font-size: 16px;
-        }
-        header ul {
-            padding: 0;
-            list-style: none;
-        }
-        header ul li {
-            float: left;
-            display: inline;
-            padding: 0 20px 0 20px;
-        }
-        header #branding {
-            float: left;
-        }
-        header #branding h1 {
-            margin: 0;
+            padding: 10px 0;
+            text-align: center;
         }
         section {
-            padding: 20px;
-            margin-top: 10px;
             background: #fff;
+            padding: 20px;
+            margin: 20px auto;
+            border-radius: 8px;
+            max-width: 800px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1, h2 {
+            color: #333;
+        }
+        p, ul {
+            color: #666;
+        }
+        ul {
+            list-style-type: square;
+            padding-left: 20px;
         }
     </style>
 </head>
 <body>
     <header>
+        <h1>About Jenkins</h1>
+    </header>
+    <section>
+        <h2>What is Jenkins?</h2>
+        <p>Jenkins is an open-source automation server written in Java. It helps automate the parts of software development related to building, testing, and deploying, facilitating continuous integration and continuous delivery. It is a server-based system running in a servlet container such as Apache Tomcat.</p>
+
+        <h2>Key Features</h2>
+        <ul>
+            <li>Easy installation and configuration through a web interface.</li>
+            <li>Supports various version control tools such as Git, SVN, and Mercurial.</li>
+            <li>Extensible with a vast array of plugins available to integrate with numerous tools and services.</li>
+            <li>Distributed builds support, allowing the workload to be spread across multiple machines.</li>
+        </ul>
+
+        <h2>Benefits</h2>
+        <ul>
+            <li>Speeds up development cycles by automating the integration process.</li>
+            <li>Improves code quality with automated testing.</li>
+            <li>Facilitates continuous delivery and deployment.</li>
+            <li>Increases developer productivity by identifying issues early.</li>
+        </ul>
+
+        <h2>Resources</h2>
+        <p>For more information about Jenkins, visit the official website:</p>
+        <p><a href="https://www.jenkins.io" target="_blank">Jenkins Official Website</a></p>
+    </section>
+</body>
+</html>
