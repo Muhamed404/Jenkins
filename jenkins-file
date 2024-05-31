@@ -1,0 +1,16 @@
+pipeline {
+  agent any
+  
+  stages {
+    stage('Set Variable') {
+      steps {
+        script {
+          sh '''
+            export MY_VARIABLE="Hello, World!"
+            echo "Value of MY_VARIABLE: $MY_VARIABLE"
+          '''
+        }
+      }
+    }
+  }
+}
