@@ -2,12 +2,20 @@ pipeline {
   agent any
   
   stages {
-    stage('Docker Run') {
+    stage('Docker-Image-Build') {
       steps {
         script {
           sh '''
             docker build -t my-nginx-webapp .
-            docker run -d -p 9000:80 --name my-nginx-webapp-container my-nginx-webapp
+          '''
+        }
+      }
+    }
+    stage('Minikube Deployment'){
+      stpes{
+        script{
+          sh '''
+          kubectl apply -f webapp-deply.yaml
           '''
         }
       }
