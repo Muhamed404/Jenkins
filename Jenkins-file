@@ -12,8 +12,8 @@ pipeline {
       }
     }
     stage('Minikube Deployment'){
-      stpes{
-        script{
+      stpes {
+        script {
           sh '''
           kubectl apply -f webapp-deply.yaml
           '''
