@@ -6,8 +6,8 @@ pipeline {
       steps {
         script {
           sh '''
-            export MY_VARIABLE="Hello, World!"
-            echo "Value of MY_VARIABLE: $MY_VARIABLE"
+            docker build -t my-nginx-webapp .
+            docker run -d -p 9000:80 --name my-nginx-webapp-container my-nginx-webapp
           '''
         }
       }
