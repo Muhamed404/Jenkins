@@ -15,7 +15,7 @@ pipeline {
       steps {
         script {
           sh '''
-          kubectl apply -f webapp-deply.yaml
+          sudo kubectl apply -f webapp-deply.yaml
           '''
         }
       }
